@@ -1,0 +1,3 @@
+downloads/
+soundspider/spiders/downloads/
+*.pyc
