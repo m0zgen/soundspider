@@ -43,7 +43,7 @@ Done! Happy coding!
 
 # Future
 
-Maybe create publication in my [blog]
+Maybe will create an article in my [blog]
 
 [Scrapy]: https://scrapy.org/
 [blog]: https://sys-adm.in
