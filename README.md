@@ -1,49 +1,57 @@
-# Soundspider for Russian soundtrack resource "http://всесаундтреки.рф"
-This simple python script, which use [Scrapy] library:
+### Media downloader for [ВСЕСАУНДТРЕКИ.РФ](http://всесаундтреки.рф)
 
-How install Scrapy:
-```sh
+#### Synopsis
+
+This crawler is built on top of [Scrapy](https://scrapy.org). My main goal was to implement simple wrapper to allow myself get some OST music with ease.
+
+
+### Prerequisites
+
+* Get all dependencies:
+```bash
   pip install scrapy
 ```
 
-You can:
-* clone this repo
-* change link to soundtrack category
-* setup download folder name
 
-All changes must be made in the spider script file (see Usage section bellow)
+### Installation
 
-# Usage
-Clone repository and go to spider folder:
-```sh
-  cd soundspider/soundspider/spiders
+To get this piece of software and fire it up you should do the following steps:
+
+1. Clone this repo:
+```bash
+git clone https://github.com/m0zgen/soundspider.git
 ```
 
-open file:
-```sh
-  nano mp3_spider.py
+2. Open configuration file:
+```bash
+cd soundspider/soundspider/spiders/
+vim mp3_spider.py
+```
+3. Configure `soundspider`:
+
+Define download folder (don't worry, it'll be created automatically):
+```bash
+...
+catalog_name = "God-of-war"
+...
 ```
 
-Change download catalog folder name (this folder will create automaticly), as example:
-```sh
-  catalog_name = "God-of-war"
-```
-
-Change link to soundtrack category:
-```sh
+Define OST link to download from:
+```bash
+  ...
   source_site = "http://xn--80adhccsnv2afbpk.xn--p1ai/saundtrek-k-igre/7141-2018-god-of-war-soundtrack.html"
+  ...
 ```
 
-Run spider:
-```sh
+### Usage
+
+After all needed changes are made to `mp3_spider.py` run the spider itself:
+```bash
   scrapy crawl mp3
 ```
 
-Done! Happy coding!
+Done! Happy downloading!
 
-# Future
+### Contacts
 
-Maybe will create an article in my [blog]
-
-[Scrapy]: https://scrapy.org/
-[blog]: https://sys-adm.in
+Feel free to check my [site](https://sys-adm.in).
