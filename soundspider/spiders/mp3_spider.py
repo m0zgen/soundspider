@@ -56,9 +56,8 @@ class Mp3Spider(scrapy.Spider):
         album = response.css(
             "table.FullStoryInfoTable td.nameartistNew::text").extract_first()
         domain = source_site.split('/', 3)
-        # full_download_link = domain[0] + "//mp3m." + domain[1] + domain[2] + download_url[0]
         full_download_link = domain[0] + "//" + DWN_DOMAIN[2] + download_url[0]
         save_file = os.path.join(ITEMS_DIR, album + " - " + artist + ".mp3")
-        # print(save_file + "==" + full_download_link)
-        # Download mp3 from site
+
+        # Download mp3 from site with percent progress
         urllib.urlretrieve(full_download_link, save_file, reporthook=report)
