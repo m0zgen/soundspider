@@ -1,7 +1,5 @@
 # Soundspider for Russian soundtrack resource "http://всесаундтреки.рф"
-This simple python script, which use Scrapy library:
-
-[site]: https://scrapy.org/
+This simple python script, which use [Scrapy] library:
 
 How install Scrapy:
 ```sh
@@ -45,6 +43,7 @@ Done! Happy coding!
 
 # Future
 
-Maybe create publication in my [site]
+Maybe create publication in my [blog]
 
-[site]: https://sys-adm.in
+[Scrapy]: https://scrapy.org/
+[blog]: https://sys-adm.in
