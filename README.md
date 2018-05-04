@@ -9,7 +9,7 @@ This crawler is built on top of [Scrapy](https://scrapy.org). My main goal was t
 
 * Get all dependencies:
 ```bash
-  pip install scrapy
+pip install scrapy
 ```
 
 
@@ -38,16 +38,16 @@ catalog_name = "God-of-war"
 
 Define OST link to download from:
 ```bash
-  ...
-  source_site = "http://xn--80adhccsnv2afbpk.xn--p1ai/saundtrek-k-igre/7141-2018-god-of-war-soundtrack.html"
-  ...
+...
+source_site = "http://xn--80adhccsnv2afbpk.xn--p1ai/saundtrek-k-igre/7141-2018-god-of-war-soundtrack.html"
+...
 ```
 
 ### Usage
 
 After all needed changes are made to `mp3_spider.py` run the spider itself:
 ```bash
-  scrapy crawl mp3
+scrapy crawl mp3
 ```
 
 Done! Happy downloading!
