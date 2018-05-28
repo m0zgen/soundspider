@@ -43,6 +43,22 @@ source_site = "http://xn--80adhccsnv2afbpk.xn--p1ai/saundtrek-k-igre/7141-2018-g
 ...
 ```
 
+### Troubleshooting
+
+If you sow message after start crawl, such as:
+```bash
+...
+ File "/usr/lib/python2.7/site-packages/pyasn1_modules/rfc2459.py", line 1014, in AttributeTypeAndValue
+    openType=opentype.OpenType('type', certificateAttributesMap))
+TypeError: __init__() got an unexpected keyword argument 'openType'
+...
+```
+
+Please run this command:
+```bash
+pip install "pyasn1-modules<=0.2.0"
+```
+
 ### Usage
 
 After all needed changes are made to `mp3_spider.py` run the spider itself:
