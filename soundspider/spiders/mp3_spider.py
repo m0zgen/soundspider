@@ -8,9 +8,9 @@ import os.path
 import scrapy
 
 # Catalog name
-catalog_name = "God-of-war"
+catalog_name = "Dirt4"
 """ http://mp3.всесаундтреки.рф/ """
-source_site = "http://xn--80adhccsnv2afbpk.xn--p1ai/saundtrek-k-igre/7141-2018-god-of-war-soundtrack.html"
+source_site = "http://xn--80adhccsnv2afbpk.xn--p1ai/saundtrek-k-igre/6759-2017-dirt-4.html"
 
 # Save to download folder
 global ITEMS_DIR
