@@ -4,25 +4,50 @@
 
 This crawler is built on top of [Scrapy](https://scrapy.org). My main goal was to implement simple wrapper to allow myself get some OST music with ease.
 
-
 ### Prerequisites
 
-* Get all dependencies:
-```bash
-pip install scrapy
-```
-
+* Python3
+* Scrapy
 
 ### Installation
 
 To get this piece of software and fire it up you should do the following steps:
 
-1. Clone this repo:
+1. Clone repository
+
 ```bash
 git clone https://github.com/m0zgen/soundspider.git
 ```
 
-2. Open configuration file:
+2. `cd` to repository folder
+3. Create `venv`:
+```python
+python3 -m venv venv
+```
+
+or
+
+```python
+virtualenv venv
+```
+
+4. Activate your `venv`
+```bash
+source venv/bin/activate
+```
+
+* Then install all dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+or install `scrapy` by manual:
+
+```bash
+pip install scrapy
+```
+
+5. Open configuration file:
 ```bash
 cd soundspider/soundspider/spiders/
 vim mp3_spider.py
