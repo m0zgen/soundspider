@@ -2,9 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import time
 import urllib
-# import urllib.request
 import os.path
 import scrapy
 
